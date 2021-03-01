@@ -1,0 +1,149 @@
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    font-size: 0.775em;
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid #53565c;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    padding: 1em 1.2em;
+    box-shadow: inset 0 0 0 0 #404247;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    font-weight: 400;
+    border-radius: 0;
+    color: #53565c;
+}
+.btn:hover {
+    background-color: #53565c;
+    border-color: #53565c;
+    box-shadow: inset 0 -100px 0 0 #404247;
+    color: #fff;
+}
+
+section.projectTiles ul {
+  padding: 25px 0;
+}
+section.projectTiles .projectTiles-items {
+  padding: 0;
+  background-color: #c81486; 
+  cursor: pointer;
+}
+section.projectTiles .projectTiles-items img {
+  width: 100%;
+}
+section.projectTiles .text-overlay {
+  background-color: rgba(200,20,134,1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+section.projectTiles .projectTiles-items span {
+  padding: 34px;
+  color: #fff;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: left;
+  text-transform: uppercase;
+}
+section.projectTiles .projectTiles-items:hover .text-overlay {
+  opacity: 1;
+}
+section.projectTiles.projectTiless .projectTiles-items {
+  padding: 2px;
+  background-color: transparent;
+  margin-bottom: 2px;
+}
+section.projectTiles {
+  text-align: center;
+}
+
+.projectTiles .portfolioInner {
+  position: relative;
+}
+.projectTiles .portfolioInner {
+  padding: 2px;
+  overflow: hidden;
+}
+.projectTiles .portfolioInner img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.projectTiles .portfolioInner:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.projectTiles .portfolioInner .textOverlay {
+  background-color: rgba(292,0,0,0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.projectTiles .portfolioInner:hover .textOverlay {
+  opacity: 1;
+}
+.projectTiles .portfolioInner .textOverlay span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  font-size: 2rem;
+  color: #fff;
+  overflow: hidden;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  line-height: 26px;
+  text-align: center;
+}
+.projectTiles .portfolioInner .textOverlay span {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.clients-home .clients-logos .gallery-buttons {
+  margin-top: 60px; 
+}
+
+@media screen and (max-width: 1200px) {
+  section.project-tiles .project-tiles-items span {
+    font-size: 50px;
+    line-height: 42px;
+    padding: 20px;
+  }
+}
+@media (max-width: 545px) {
+  section.project-tiles .project-tiles-items span {
+    font-size: 40px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.project-tiles .project-tiles-items span {
+    font-size: 26px;
+    line-height: 26px;
+    padding: 10px;
+  }
+  section.project-tiles h2 {
+    font-size: 40px;
+  }
+}
