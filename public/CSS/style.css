@@ -1,0 +1,351 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("../assets/background.jpg");
+  font-size: 20px;
+  line-height: 34px;
+ }
+
+.container {
+  width:100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1, h2, h3, p {
+  margin-bottom: 30px;
+}
+
+p:last-child{
+  margin-bottom: 0;
+}
+
+h1,  h3 {
+  font-family: 'Passion One', 'Georgia', Times, 'Times New Roman', serif;
+  font-weight: 700;
+  color:black;
+}
+
+
+h1 {
+  font-size: 30px;
+  line-height: 49px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #470a0a;
+}
+
+h2, h3 { 
+  font-size: 22px;
+}
+
+
+footer {
+  background: red;
+  background: -webkit-linear-gradient(59deg,red #16222A);
+  background: linear-gradient(59deg, red, #16222A);
+  color: white;
+  display: inline-block;
+  margin: 2em 0;
+  height: 70px;
+}
+
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.social {
+  width: 50%;
+  float: right;
+@media (max-width: 600px) {
+  width: 100%;
+}
+ .social a {
+  float: left;
+  line-height: 70px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold; 
+  @include transition(all, 0.3s);
+   &:hover {
+     background-color: #222;
+     @include transition(all, .3s);
+   }
+}
+}
+
+
+
+
+/* header */
+
+#navHead {
+  width: 100%;
+  overflow: auto;
+  position: right;
+  border-bottom: 2px solid #470a0a;
+  background: red;
+  position: relative;
+  background: red;
+  background: -webkit-linear-gradient(59deg,red #16222A);
+  background: linear-gradient(59deg, red, #16222A);
+  
+}
+
+#nameBanner {
+  width: 350px;
+  height: 90px;
+  float: left;
+  text-align: right;
+  font-family: 'Turret Road', sans-serif;
+  line-height: 90px;
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+  z-index: -1;
+
+}
+
+nav {
+  float:right;
+  margin-top: 25px;
+}
+
+nav a{
+  display: inline-block;
+  margin-left: 25px;
+  padding-left: 15px;
+  text-decoration: none;
+  line-height: 20px;
+  color: white;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #470a0a;
+}
+
+/* main */
+
+#main-container {
+  padding-top: 130px;
+  min-height: 100%;
+}
+
+.aboutme {
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 40px 40px 0;
+  float: left;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.imageMe { 
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  float: left;
+  margin-right: 25px;
+}
+
+/* sidebar */
+.gitLi { 
+  width: 100%;
+  max-width: 250px;
+  padding: 30px;
+  margin-bottom: 20px;
+  margin-top: 20;
+  max-height: auto;
+  float: right;
+  border: 1px solid #ddd;
+  background: red;
+  color: white}
+
+.gitLi a:hover img {
+  border: 3px solid #470a0a;
+}
+
+
+.social {
+  width: 62px;
+  height: 100x;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+.social:last-child { 
+  margin-right: 0;
+}
+
+
+/* css for the portfolio page */
+
+.work {
+  width: 274px;
+  overflow: auto;
+  position: relative;
+  float: left;
+  margin: 20px 0 25px;
+}
+
+.work:nth-child(even){ 
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 10px;
+  opacity: .8;
+}
+
+.work h3 { 
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  padding: 15px;
+  line-height: 30px;
+  border-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: 300;
+  background:orange;
+  color: #fff;
+}
+
+/* animation, commented out because it's obnoxious */
+/*.work:hover {
+  animation-name: portfolioAnim;
+  animation-duration: 1s;
+}*/
+
+/* contact */
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label, 
+input[type=text],
+input[type=email],
+textarea { 
+  display:block;
+  width: 100%
+}
+
+li{
+  color: white;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea{
+  height: 150px;
+}
+
+input[type=submit] {
+  border: 0 none;
+  font-size: 18px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: red;
+  color: #fff;
+}
+
+
+/* adjust to screen size of phone, tablets, computers screens, */
+@media screen and (max-width: 980px) {
+  .container {
+      max-width: 760px;
+  }
+      
+  .main-section {
+      max-width: 450px;
+  }
+
+  .auth-image, .work {
+      width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+      max-width: 650px;
+  }
+
+  .main-section, .gitLi 
+  {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .auth-image {
+      width: 50%;
+  }
+
+  .gitLi { 
+      margin-bottom: 40px;
+  }
+
+  .work
+  {
+      width: 45%;
+  }
+}
+@media screen and (max-width: 640px) {
+  #navHead { 
+      position: static;
+  }
+
+  #logo, nav {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav {
+      width: 100%;
+      margin: 10px 0;
+      padding: 0;
+      white-space: nowrap;
+  }
+
+  nav a {
+      margin: 0;
+      width: 33.33%;
+  }
+
+  #main-container {
+      padding-top: 10px;
+      max-width: 590px;
+  }
+  .auth-image, .work
+  {
+      width: 100%;
+  }
+
+
+
+
+}
